@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-n_4%xuvn(4ojz^nd50w*jcez(onuj0k6ggz1ls$7v6+@5k9^hk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', 'localhost']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost']
 
 
 # Application definition
@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'Restapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("DB_NAME"),
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': os.environ.get("DB_HOST"),
-        'PORT': os.environ.get("DB_PORT"),
+        'NAME': "postgres",
+        'USER': "postgres",
+        'PASSWORD': "recipeapiadmin",
+        'HOST': "db.wocshbvcejpbegqochap.supabase.co",
+        'PORT': "5432",
     }
 }
 
